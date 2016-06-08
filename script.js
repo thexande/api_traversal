@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $('#search').click(function() {
     var search = $('#text_field').val()
-    $.getJSON('http://www.omdbapi.com/?s=' + search + '', function(data) {
+    $.getJSON('https://www.omdbapi.com/?s=' + search + '', function(data) {
       $('#center_column').html("")
       data.Search.forEach(function(val, key) {
         var $title = $("<div>", {html: val.Title + ", " + val.Year})
