@@ -1,3 +1,9 @@
+body{
+  text-align: center;
+}
+
+
+
 .movie_poster{
   width: 150px;
   height: 221px;
@@ -8,5 +14,15 @@
 }
 
 #center_column{
-  
+font-size: 16px;
+}
+
+@media (max-width: 500px){
+  .movie_poster{
+    width: 120px;
+    height: 191px;
+  }
+  #center_column{
+    font-size: 12px;
+  }
 }
